@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JWT</name>
+    </assembly>
+    <members>
+        <member name="T:JWT.Controllers.CriarTokenController">
+            <summary>
+            CriarTokenController
+            </summary>
+        </member>
+        <member name="M:JWT.Controllers.CriarTokenController.#ctor(Microsoft.Extensions.Options.IOptions{JWT.Helpers.AppSettings})">
+            <summary>
+            CriarTokenController
+            </summary>
+            <param name="appSettings"></param>
+        </member>
+        <member name="M:JWT.Controllers.CriarTokenController.SerializeObject(System.Object)">
+            <summary>
+            SerializeObject
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JWT.Controllers.CriarTokenController.CreateToken(System.String)">
+            <summary>
+            CreateToken
+            </summary>
+            <param name="Username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JWT.Controllers.CriarTokenController.GetToken(System.String)">
+            <summary>
+            GetToken
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:JWT.Controllers.WeatherForecastController">
+            <summary>
+            WeatherForecastController
+            </summary>
+        </member>
+        <member name="M:JWT.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{JWT.Controllers.WeatherForecastController})">
+            <summary>
+            WeatherForecastController
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:JWT.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:JWT.Domain.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="P:JWT.Domain.Usuario.Username">
+            <summary>
+            Username
+            </summary>
+        </member>
+        <member name="T:JWT.Extensions.JwtExtensions">
+            <summary>
+            JwtExtensions
+            </summary>
+        </member>
+        <member name="M:JWT.Extensions.JwtExtensions.ConfigureJwt(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            ConfigureJwt
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:JWT.Extensions.JwtExtensions.UseJwt(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            UseJwt
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:JWT.Extensions.SwaggerExtensions">
+            <summary>
+            SwaggerExtensions
+            </summary>
+        </member>
+        <member name="M:JWT.Extensions.SwaggerExtensions.ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:JWT.Extensions.SwaggerExtensions.UseSwaggerApi(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            SwaggerConfigure
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:JWT.Filters.AuthResponsesOperationFilter">
+            <summary>
+            SecurityRequirementsOperationFilter
+            </summary>
+        </member>
+        <member name="M:JWT.Filters.AuthResponsesOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Apply
+            </summary>
+            <param name="operation"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:JWT.Helpers.AppSettings">
+            <summary>
+            AppSettings
+            </summary>
+        </member>
+        <member name="P:JWT.Helpers.AppSettings.ApiKey">
+            <summary>
+            ApiKey
+            </summary>
+        </member>
+        <member name="T:JWT.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:JWT.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:JWT.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            CreateHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:JWT.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:JWT.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:JWT.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:JWT.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:JWT.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:JWT.WeatherForecast">
+            <summary>
+            WeatherForecast
+            </summary>
+        </member>
+        <member name="P:JWT.WeatherForecast.Date">
+            <summary>
+            Date
+            </summary>
+        </member>
+        <member name="P:JWT.WeatherForecast.TemperatureC">
+            <summary>
+            TemperatureC
+            </summary>
+        </member>
+        <member name="P:JWT.WeatherForecast.TemperatureF">
+            <summary>
+            TemperatureF
+            </summary>
+        </member>
+        <member name="P:JWT.WeatherForecast.Summary">
+            <summary>
+            Summary
+            </summary>
+        </member>
+    </members>
+</doc>
